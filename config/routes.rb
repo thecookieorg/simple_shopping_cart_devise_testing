@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'order_history/index'
+
+  resources :orders
   resources :line_items
   resources :carts
   get 'store/index'

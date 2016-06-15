@@ -1,0 +1,11 @@
+<% if @orders.present? %>
+	<% @orders.each do |order| %>
+		<p>ID: <%= order.id %></p>
+		<p>payment type: <%= order.pay_type %></p>
+		
+	
+		
+	<% end %>
+<% else %>
+	<h2>No orders yet</h2>
+<% end %>
