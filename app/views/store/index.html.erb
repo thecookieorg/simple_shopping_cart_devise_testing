@@ -1,0 +1,8 @@
+<h1>Catalog</h1>
+
+<% @products.each do |product| %>
+	<h3><%= product.title %></h3>
+	<!-- sanitize() method allows us to safely add HTML stylings to make descriptions more interesting for our customers -->
+	<%= sanitize(product.description) %>
+	<p><%= number_to_currency(product.price) %></p>
+<% end %>
